@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,433;1,600&family=PT+Sans+Narrow&family=Titillium+Web:ital,wght@1,200;1,300;1,600&display=swap');
+
+body {
+    background:#bbecf3
+}
+.loader {
+  border: 16px solid #faf9f9;
+  border-radius: 50%;
+  border-top: 16px solid rgb(65, 206, 211);
+  
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  position: relative;
+  left: 45%;
+  right: 55%;
+  top: 190px;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+.maincontainer {
+    background-size: cover;
+}
+
+.container {
+    height: auto;
+}
+
+.nav {
+    height: 70px;
+    background-color:  rgba(0, 0, 0, 0.500);
+    padding: 15px;
+    overflow: hidden;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    color: rgb(52, 230, 105);
+    font-size: 55px;
+    font-weight: 600;
+    justify-content: left;
+    margin-left: 30px;
+    margin-top: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+
+.nav .btn {
+    display: none;
+    float: right;
+    display: block;
+    text-align: center;
+    color: black;
+    border:2px solid rgb(238, 235, 221);
+    padding: 10px;
+    margin-right: 30px;
+    margin-top: 7px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma , sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    transition: 0.5s;
+    border-radius: 15px;
+  cursor: pointer;
+    width: 10%;
+    background-color: rgb(243, 115, 11);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .nav a.btn {
+        color: #d31720;
+        float: right;
+        display: block;
+        width: 20%;
+    }
+
+    .container {
+        height: 100px;
+        text-align: -webkit-center;
+    }
+    .img{
+        width: 300px;
+        margin-right: 80px;
+    }
+}
+
+.img {
+   margin-top: 10px;
+   text-align: center;
+}
+
